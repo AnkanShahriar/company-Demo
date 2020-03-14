@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$username=$_SESSION["uname"];
+	$username=$_SESSION["email"];
 	
 ?>
 <!DOCTYPE HTML>

@@ -68,7 +68,7 @@
 		</div>
 		<div class="menu_area">
 			<ul>
-				<li><a href="dash.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="log.php">Login</a></li>
 				<li><a href="regi.php">Registration</a></li>
 			</ul>
@@ -141,6 +141,7 @@
 	
 
 	$conn->close();
+	header("location: log.php");
 ?>
 </body>
 </html>

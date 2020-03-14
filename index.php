@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>XCOMPANY</title>
+	<title>X-COMPANY</title>
 	<style>
 		body{
 			margin:0;
@@ -74,7 +74,7 @@
 		</div>
 	</div>
 	<div class="content_area">
-		<h1>Welcome Back</h1>
+		<h1>Thanks for visiting !</h1>
 	</div>
 	<div class="footer_area">
 		<h3>&copy;2020</h3>

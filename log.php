@@ -70,7 +70,7 @@
 		</div>
 		<div class="menu_area">
 			<ul>
-				<li><a href="dash.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="log.php">Login</a></li>
 				<li><a href="regi.php">Registration</a></li>
 			</ul>
@@ -116,16 +116,15 @@
 		$username = "root";
 		$password = "";
 		$dbname = "odb";
-		// Create connection
+		
 		$conn = new mysqli($servername, $username, $password, $dbname);
-		// Check connection
+	
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
 
 		if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
+  
 		   
 		  
 		  $sql = "SELECT * FROM users WHERE email = '".$_POST["email"]."' and password = '".$_POST["pass"]."'";
@@ -133,6 +132,7 @@
 		  if ($result->num_rows > 0)
 		  {
 			  $_SESSION["email"]=$_POST["email"];
+			  
 			  header("location: dash.php");
 		  }
 			  
